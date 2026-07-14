@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0a1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sensia">
+  <meta name="description" content="Programa día a día para recuperar sensibilidad, presencia y una mejor vida sexual.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Sensia</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Las vistas se renderizan dinámicamente -->
+    <main id="view"></main>
+
+    <nav id="tabbar">
+      <button data-tab="today" class="active" aria-label="Hoy">
+        <svg viewBox="0 0 24 24"><path d="M12 2a1 1 0 0 1 1 1v1a8 8 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+        <span>Hoy</span>
+      </button>
+      <button data-tab="progress" aria-label="Progreso">
+        <svg viewBox="0 0 24 24"><path d="M4 20V10h4v10H4zm6 0V4h4v16h-4zm6 0v-7h4v7h-4z"/></svg>
+        <span>Progreso</span>
+      </button>
+      <button data-tab="panic" class="panic" aria-label="Impulso">
+        <svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        <span>Impulso</span>
+      </button>
+      <button data-tab="learn" aria-label="Aprender">
+        <svg viewBox="0 0 24 24"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+        <span>Aprender</span>
+      </button>
+      <button data-tab="journal" aria-label="Diario">
+        <svg viewBox="0 0 24 24"><path d="M4 4a2 2 0 0 1 2-2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm10 1v4h4M8 13h8M8 17h5"/></svg>
+        <span>Diario</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
